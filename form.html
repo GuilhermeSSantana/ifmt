@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+    <style type="text/css">
+        .loading {
+          margin: 60px auto;
+          border: 3px solid #094CFA;
+          background: white;
+          width: 60px;
+          height: 60px;
+          border-radius: 4px;
+    
+          /* Aqui declaramos nossa animação inline */
+          animation: rotate 3s infinite linear;
+        }
+        
+        @keyframes rotate {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(359deg);
+          }
+        }
+      </style>
+</head>
+<body>
+    
+    <H1>Formulário de Cadastro</H1>
+
+    
+    <Form>
+        <div class="fmr>
+            <label for="fname">Primeiro nome</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="fname">Sobrenome</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="pwd">Senha</label><br>
+            <input type="password" id="fname" name="pwd">
+
+            <h3>Data de nascimento <input type="date"></h3> 
+            <a>Sexo:</a><br> 
+            <input type="radio" id="homem" name="genero" value="homem">
+            <label for="Homem">Masculino</label><br>
+            <input type="radio" id="mulher" name="genero" value="mulher">
+            <label for="Mulher">Feminino</label><a>Sexo:</a><br><br>
+
+            <a><strong>Locomoção:</strong></a><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Bicicleta </label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Carro</label><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Ônibus</label><br>
+
+            <h3>Selecione sua cor favorita <input type="color"></h3><br>
+            
+            
+            <input type="button" value="Enviar" onclick="msg()">
+        </div>
+    </Form>
+    <div class="loading"></div>
+    <script>
+        function msg() {
+            alert("Formulario enviado");
+        }
+    </script>
+    
+</body>
+</html>
